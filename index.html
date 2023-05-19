@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Registraion Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./script.js"></script>
+
+  </head>
+
+  <body>
+
+    <form action="#" class="form">
+
+      <h1 class="form-title">SIGN UP YOUR USER ACCOUNT</h1>
+      <p class="form-title-desc">Fill all form field to go next step</p>
+ 
+      <div class="progress-step">
+          
+        <div class="hr"></div>
+        
+        <div class="icon">
+          <i class="fa fa-user"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa fa-image"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa fa-file"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa fa-bars"></i>
+        </div>
+
+      </div>
+      
+      <div class="progress-bar">
+         <div class="contain" id="progress"> </div>
+      </div>
+
+      <p class="account-info">Account Information :</p>
+      <div id="first_step">
+
+        <div class="input-group" id="one">
+          <label for="username">First Name*</label>
+          <input type="text" name="username" id="username" onchange="chj"/>
+        </div>
+
+        <div class="input-group" id="two">
+          <label for="position">Last Name*</label>
+          <input type="text" name="position" id="position" />
+        </div>
+
+        <div class="">
+          <a href="#" class="btn btn-next" onclick="function1()">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step" id="second_step">
+        <div class="input-group">
+          <label for="phone" id="three">Phone*</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+
+        <div class="input-group" id="four">
+          <label for="email">Email*</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev" onclick="Function1()">Previous</a>
+          <a href="#" class="btn btn-next" onclick="function2()">Next</a>
+        </div>
+
+      </div>
+
+      <div class="form-step" id="Third_step">
+
+        <div class="input-group" id="four">
+          <label for="dob">Date of Birth*</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+
+        <div class="input-group" id="five">
+          <label for="ID">National ID*</label>
+          <input type="number" name="ID" id="ID" />
+        </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev" onclick="Function2()">Previous</a>
+          <a href="#" class="btn btn-next" onclick="function3()">Next</a>
+        </div>
+
+      </div>
+
+      <div class="form-step" id="fourth_step">
+
+        <div class="input-group" id="five">
+          <label for="password">Password*</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="input-group" id="six">
+          <label for="confirmPassword">Confirm Password*</label>
+          <input type="password" name="confirmPassword" id="confirmPassword"/>
+        </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev" onclick="Function3()">Previous</a>
+          <input type="submit" value="Submit" class="btn" onclick="function4()"/>
+        </div>
+
+      </div>
+
+      <div class="form-step" id="fifth-step">
+        <p id="result"></p>
+      </div>
+
+    </form>
+
+  </body>
+  
+</html>
